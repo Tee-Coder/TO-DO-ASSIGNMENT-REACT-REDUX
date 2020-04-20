@@ -70,6 +70,7 @@ export class Todo extends React.Component<ITodoProps>
 
         </ul>
         </Grid.Row>
+        
       </Grid>
     );
   }
