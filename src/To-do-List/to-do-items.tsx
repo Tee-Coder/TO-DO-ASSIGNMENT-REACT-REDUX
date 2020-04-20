@@ -49,6 +49,8 @@ export class Todo extends React.Component<ITodoProps>
         <Grid.Row>
         <h3>Tasks</h3>
         <ul>
+        
+        {/* this is to show what should happen if the items length is more than 0. When all the items are removed from the list, a message         <li> Not a single task in your TO-DO list added! Also, no task to remove</li>  shows. To show you dont have any task to remove*/}
             {(this.props.items.length >0) ?
            this.props.items.map( element => (
               <li>
@@ -70,7 +72,7 @@ export class Todo extends React.Component<ITodoProps>
 
         </ul>
         </Grid.Row>
-        
+
       </Grid>
     );
   }
